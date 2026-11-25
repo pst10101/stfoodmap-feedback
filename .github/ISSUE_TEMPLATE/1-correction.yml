@@ -1,0 +1,38 @@
+name: 잘못된 내용 수정
+description: 틀린 메뉴, 틀린 날짜, 끊긴 링크, 잘못 옮긴 인용문 등을 알려 주세요.
+title: "[수정] "
+labels: ["수정"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **이 글은 누구나 볼 수 있습니다.** 멤버나 다른 사람의 사생활(사는 곳, 본명, 연락처 등)은 적지 마세요.
+  - type: input
+    id: item
+    attributes:
+      label: 어느 항목인가요?
+      description: 사이트에 보이는 멤버 이름과 항목 제목을 적어 주세요.
+      placeholder: "예: 네네코 마시로 — 시로의 서브웨이 레시피"
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: 무엇이 틀렸나요?
+      placeholder: "예: 소스가 스위트 어니언이 아니라 스위트 칠리입니다."
+    validations:
+      required: true
+  - type: textarea
+    id: right
+    attributes:
+      label: 어떻게 고쳐야 하나요?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: 근거가 되는 원문 주소
+      description: 멤버 본인이 말하거나 쓴 곳의 주소입니다. 방송 다시보기는 시간도 함께 적어 주세요.
+      placeholder: "https://"
+    validations:
+      required: false

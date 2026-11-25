@@ -1,0 +1,37 @@
+name: 항목 삭제 요청
+description: 사이트에 실려 있으면 안 되는 내용을 지워 달라고 요청합니다.
+title: "[삭제] "
+labels: ["삭제 요청"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **이 글은 누구나 볼 수 있습니다.**
+        사생활이 드러나는 내용 때문에 요청하신다면, 그 내용을 여기에 다시 적지 마세요. **어느 항목인지만** 적어 주시면 확인하고 지우겠습니다.
+  - type: input
+    id: item
+    attributes:
+      label: 어느 항목인가요?
+      description: 사이트에 보이는 멤버 이름과 항목 제목을 적어 주세요.
+      placeholder: "예: 하나코 나나 — 합정 라멘집 추천"
+    validations:
+      required: true
+  - type: dropdown
+    id: reason
+    attributes:
+      label: 지워야 하는 이유
+      options:
+        - 사생활이 드러남 (사는 곳, 개인 정보 등)
+        - 멤버 본인이 한 말이 아님 / 출처가 틀림
+        - 멤버나 소속사가 내려 달라고 한 내용임
+        - 가게나 다른 사람에게 피해가 감
+        - 그 밖의 이유
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 덧붙일 말 (선택)
+      description: 사생활에 해당하는 내용은 적지 않아도 됩니다.
+    validations:
+      required: false

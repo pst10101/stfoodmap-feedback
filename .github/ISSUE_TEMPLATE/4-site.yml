@@ -1,0 +1,23 @@
+name: 사이트 오류·건의
+description: 화면이나 지도가 이상할 때, 기능을 제안하고 싶을 때 적어 주세요.
+title: "[사이트] "
+labels: ["사이트"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **이 글은 누구나 볼 수 있습니다.** 개인 정보는 적지 마세요.
+  - type: textarea
+    id: what
+    attributes:
+      label: 무슨 일인가요?
+      placeholder: "예: 휴대폰에서 지도 핀을 눌러도 가게 이름이 안 보입니다."
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: 쓰는 기기와 브라우저 (오류일 때)
+      placeholder: "예: 갤럭시 S24, 삼성 인터넷"
+    validations:
+      required: false
