@@ -1,7 +1,6 @@
 name: 잘못된 내용 수정
 description: 틀린 메뉴, 틀린 날짜, 끊긴 링크, 잘못 옮긴 인용문 등을 알려 주세요.
 title: "[수정] "
-labels: ["수정"]
 body:
   - type: markdown
     attributes:

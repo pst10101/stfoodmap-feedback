@@ -1,7 +1,6 @@
 name: 새 자료 제보
 description: 멤버가 직접 말한 먹거리 가운데 사이트에 빠진 것을 알려 주세요.
 title: "[제보] "
-labels: ["제보"]
 body:
   - type: markdown
     attributes:

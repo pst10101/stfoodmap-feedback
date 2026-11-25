@@ -1,7 +1,6 @@
 name: 사이트 오류·건의
 description: 화면이나 지도가 이상할 때, 기능을 제안하고 싶을 때 적어 주세요.
 title: "[사이트] "
-labels: ["사이트"]
 body:
   - type: markdown
     attributes:
